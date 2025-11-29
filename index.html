@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xil'Art Sewing Workshop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Welcome to <em>Xil'Art Sewing Workshop</em></h1>
+    <p>Unleash your creativity — sew, stitch, and style with us!</p>
+    <button id="highlightHeader">Highlight Header</button>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#register">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Xil'Art</h2>
+      <p>From beginners to pros, join our hands-on workshops. Learn techniques, collaborate with fellow creatives, and craft something beautiful!</p>
+      <figure>
+        <img src="https://images.pexels.com/photos/12672239/pexels-photo-12672239.jpeg" alt="Participants sewing">
+        <figcaption>Xil’Art workshops in action: stitch, chat, create.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule">
+      <h2>Upcoming Workshops</h2>
+      <div class="lists-container">
+        <div class="list-block">
+          <h3>Workshop Topics</h3>
+          <ul>
+            <li>Beginner Essentials</li>
+            <li>Accessory Creation</li>
+            <li>Advanced Techniques</li>
+          </ul>
+        </div>
+        <div class="list-block">
+          <h3>Learning Path</h3>
+          <ol>
+            <li>Basic hand stitching</li>
+            <li>Machine sewing techniques</li>
+            <li>Accessory creation</li>
+            <li>Garment design & finishing</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Schedule Table -->
+      <table>
+        <caption>Schedule & Pricing</caption>
+        <thead>
+          <tr>
+            <th>Workshop</th>
+            <th>Date</th>
+            <th>Duration</th>
+            <th>Fee</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Beginner Essentials</td>
+            <td>Sept 10, 2025</td>
+            <td>3 hours</td>
+            <td>200,000 BIF</td>
+          </tr>
+          <tr>
+            <td>Accessory Creation</td>
+            <td>Sept 17, 2025</td>
+            <td>4 hours</td>
+            <td>250,000 BIF</td>
+          </tr>
+          <tr>
+            <td>Advanced Techniques</td>
+            <td>Sept 24, 2025</td>
+            <td>5 hours</td>
+            <td>300,000 BIF</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register">
+      <h2>Register for a Workshop</h2>
+      <form id="workshopForm" autocomplete="on">
+        <!-- Personal Info -->
+        <fieldset>
+          <legend>Your Details</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Irakoze Elsa" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="elsa@example.com" required>
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+25761000001" required>
+
+          <label for="workshop">Workshop:</label>
+          <select id="workshop" name="workshop" required>
+            <option value="">Select workshop</option>
+            <option value="beginner">Beginner Essentials</option>
+            <option value="accessory">Accessory Creation</option>
+            <option value="advanced">Advanced Techniques</option>
+          </select>
+        </fieldset>
+
+        <!-- Preferences -->
+        <fieldset>
+          <legend>Preferences & Consent</legend>
+          <label for="experience">Sewing Experience (years):</label>
+          <input type="number" id="experience" name="experience" min="0" max="50" placeholder="0" required>
+
+          <label>
+            <input type="checkbox" id="newsletter" name="newsletter"> Subscribe to newsletter
+          </label>
+
+          <label>
+            <input type="checkbox" id="terms" name="terms" required> I agree to the Terms & Conditions
+          </label>
+        </fieldset>
+
+        <button type="submit">Submit Registration</button>
+      </form>
+      <div id="formMessage"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Xil'Art Sewing Workshop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
